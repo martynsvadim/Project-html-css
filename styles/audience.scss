@@ -1,0 +1,134 @@
+.audience {
+  padding: 50px 15px;
+  background-color: $color-light-blue;
+  text-align: center;
+
+  @include for-large-up {
+    padding: 110px 131px;
+  }
+
+  &__text {
+    @include for-large-up {
+      max-width: 555px;
+      margin: auto;
+    }
+  }
+
+  &__subtitle {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 34px;
+  }
+
+  &__title {
+    margin-top: 17px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.357143px;
+    margin-bottom: 0;
+
+    @include for-large-up {
+      font-size: 56px;
+      line-height: 56px;
+      margin-top: 24px;
+    }
+  }
+
+  &__description {
+    font-size: 24px;
+    line-height: 34px;
+    margin-top: 18px;
+    margin-bottom: 0;
+
+    @include for-large-up {
+      margin-top: 30px;
+    }
+  }
+
+  &__buttons {
+    margin-top: 30px;
+
+    @include for-large-up {
+      display: flex;
+      justify-content: center;
+      margin-top: 34px;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    box-shadow: $box-shadow;
+
+    @include for-large-up {
+      width: 160px;
+    }
+
+    &:last-child {
+      margin-top: 12px;
+
+      @include for-large-up {
+        margin-top: 0;
+      }
+    }
+
+    &-black {
+      color: $text-color-black;
+      margin-bottom: 25px;
+
+      @include for-large-up {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__gallery {
+    @include for-large-up {
+      display: flex;
+      margin-top: 111px;
+    }
+  }
+}
+
+.card {
+  margin: 0;
+  margin-top: 15px;
+  background-color: $color-white;
+  padding: 22px 76px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: $box-shadow;
+  justify-content: center;
+  align-items: center;
+
+  @include for-large-up {
+    margin-left: 30px;
+    max-width: 262px;
+    margin-top: 0;
+  }
+
+  &:first-child {
+    @include for-large-up {
+      margin-left: 0px;
+    }
+  }
+
+  &:hover {
+    background-color: $color-blue;
+    color: $color-white;
+    box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15);
+  }
+
+  &__image {
+    max-width: 138px;
+  }
+
+  &__text {
+    margin-top: 22px;
+    margin-bottom: 11px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+}

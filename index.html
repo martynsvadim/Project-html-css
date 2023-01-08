@@ -15,15 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/common.css" />
-    <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="styles/headline.css" />
-    <link rel="stylesheet" href="styles/about.css" />
-    <link rel="stylesheet" href="styles/customers.css" />
-    <link rel="stylesheet" href="styles/features.css" />
-    <link rel="stylesheet" href="styles/tips.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
@@ -31,14 +23,20 @@
       <div class="section-top">
         <header class="header">
           <div class="logo">
-            <img class="logo__image" src="image/icon.png" alt="logo" />
+            <img
+              class="logo__image"
+              src="image/icon-logo-header.png"
+              alt="logo"
+            />
             <div class="logo__text">
-              <div class="logo__name logo__name_selected">Foundation</div>
+              <div class="logo__name">Foundation</div>
               <div class="logo__description">Startup landing template</div>
             </div>
           </div>
           <nav class="navigation">
-            <a href="#" class="navigation__item nav__item_selected">Home</a>
+            <a href="#" class="navigation__item navigation__item_selected"
+              >Home</a
+            >
             <a href="#" class="navigation__item">Stories</a>
             <a href="#" class="navigation__item"
               >Library<i class="navigation_arrow"></i
@@ -244,19 +242,200 @@
         />
       </section>
 
+      <!-- Inbox -->
+
+      <section class="inbox">
+        <figure class="banner">
+          <img
+            class="banner__image"
+            src="image/inbox-illustration.png"
+            alt="inbox-illustration"
+          />
+          <figcaption class="banner__text">
+            Connect with customers and grow faster
+          </figcaption>
+        </figure>
+        <div class="inbox__content">
+          <div class="inbox__content-text">
+            <h5 class="inbox__subtitle">Team Inbox</h5>
+            <h2 class="inbox__title">Manage conversations</h2>
+            <p class="inbox__description">
+              One place to manage and respond to all conversations with leads
+              and users. Receive messages from leads.
+            </p>
+          </div>
+          <div class="comments">
+            <p class="comments__expression">
+              “Great widgets. Great selection. Great design and
+              <b>easy to implement.</b> Definitely a huge time saver for a web
+              developer!”
+            </p>
+            <div class="user">
+              <img
+                class="user__photo"
+                src="image/user-photo.png"
+                alt="Avatar"
+              />
+              <div class="user__info">
+                <div class="user__name">Viella Malkovich</div>
+                <div class="user__worker">Creative Director at Johnson</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Audience -->
+
+      <section class="audience">
+        <div class="audience__text">
+          <span class="audience__subtitle">Engage Visitors</span>
+          <h2 class="audience__title">Understand your audience</h2>
+          <p class="audience__description">
+            Early stage company? Eligible applicants get all of our products for
+            just $49 a month.
+          </p>
+        </div>
+        <div class="audience__buttons">
+          <button class="action-button audience__button">Get Started</button>
+          <button
+            class="headline__learn-more-btn audience__button audience__button-black"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <div class="audience__gallery">
+          <figure class="card">
+            <img
+              class="card__image"
+              src="image/developers-img.png"
+              alt="Develop"
+            />
+            <figcaption class="card__text">Developers</figcaption>
+          </figure>
+          <figure class="card">
+            <img
+              class="card__image"
+              src="image/entertaiment-img.png"
+              alt="Entertaiment-img"
+            />
+            <figcaption class="card__text">Entartaiment</figcaption>
+          </figure>
+          <figure class="card">
+            <img class="card__image" src="image/athlets-img.png" alt="Athlet" />
+            <figcaption class="card__text">Athlets</figcaption>
+          </figure>
+          <figure class="card">
+            <img
+              class="card__image"
+              src="image/creators-img.png"
+              alt="Create"
+            />
+            <figcaption class="card__text">Creators</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Order -->
+
+      <section class="order">
+        <img
+          class="order__illustration"
+          src="image/image-order.png"
+          alt="Order Image"
+        />
+        <div class="order__details">
+          <h3 class="order__title">Start your free trial.</h3>
+          <p class="order__text">
+            Get notified about company updates, news and blog posts. We hate
+            spam.
+          </p>
+          <form class="order__form">
+            <input
+              class="order__email"
+              type="email"
+              placeholder="Enter your email"
+            />
+            <button class="action-button order__button">Get Started</button>
+          </form>
+          <p class="order__terms">
+            Free 14-day trial · Easy setup · Cancel any time. Check out
+            <a class="order__terms-link" href="#">Terms of Use.</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Hiring -->
+
+      <section class="hiring">
+        <h2 class="hiring__title">We’re hiring</h2>
+        <p class="hiring__text">
+          We’re a team of lifelong learners. We’re equal parts left and right
+          brained.
+        </p>
+        <button class="action-button hiring__button">More about Company</button>
+        <div class="hiring__vacancies">
+          <a class="vacancy hiring__vacancy" href="#">
+            <div class="vacancy__details">
+              <div class="vacancy__title">Front-End Developer</div>
+              <div class="vacancy__location">Los Angeles / Remote</div>
+            </div>
+            <div class="vacancy__arrow-container">
+              <i class="icon-arrow_right"></i>
+            </div>
+          </a>
+          <a class="vacancy hiring__vacancy" href="#">
+            <div class="vacancy__details">
+              <div class="vacancy__title">Community Manager</div>
+              <div class="vacancy__location">New York / Full-Time</div>
+            </div>
+            <div class="vacancy__arrow-container">
+              <i class="icon-arrow_right"></i>
+            </div>
+          </a>
+          <a class="vacancy hiring__vacancy" href="#">
+            <div class="vacancy__details">
+              <div class="vacancy__title">Front-End Developer</div>
+              <div class="vacancy__location">UX/UI Designer</div>
+            </div>
+            <div class="vacancy__arrow-container">
+              <i class="icon-arrow_right"></i>
+            </div>
+          </a>
+        </div>
+      </section>
+
       <!-- Footer -->
 
       <footer class="footer">
         <div class="footer-navigation">
           <div class="about-company">
             <div class="logo">
-              <img class="logo__image" src="image/Icon(2).png" alt="logo" />
+              <img
+                class="logo__image"
+                src="image/Icon-logo-footer.png"
+                alt="logo"
+              />
               <div class="logo__text">
-                <div class="logo__name logo__name_selected">Foundation</div>
+                <div class="logo__name">Foundation</div>
                 <div class="logo__description">Startup landing template</div>
               </div>
             </div>
-            <p class="footer-description">
+            <div class="logo-vertical">
+              <img
+                class="logo-vertical__image"
+                src="image/Icon-logo-footer.png"
+                alt="logo-vertical"
+              />
+              <div class="logo-vertical__text">
+                <div class="logo-vertical__name">Foundation</div>
+                <div class="logo-vertical__description">
+                  Startup landing template
+                </div>
+              </div>
+            </div>
+            <p class="footer__description">
               Foundation is a website template for startups and small teams. It
               helps to build a website in no time.
             </p>
@@ -264,11 +443,12 @@
               <img class="downloads__item" src="image/AppStore.png" alt="Ios" />
               <img
                 class="dowloads__item"
-                src="image/Google Play.png"
+                src="image/Google-play.png"
                 alt="Android"
               />
             </div>
           </div>
+          <div class="footer_line hide_desktop"></div>
           <div class="additional-navigation">
             <div class="additional-navigation__column nav-links">
               <h3 class="nav-links__title">Product</h3>
@@ -280,7 +460,7 @@
                 <li class="nav-links__list-item">Virtual Inbox</li>
               </ul>
             </div>
-            <div class="nav-links">
+            <div class="additional-navigation__column nav-links">
               <h3 class="nav-links__title">Company</h3>
               <ul class="nav-links__list">
                 <li class="nav-links__list-item">About Foundation</li>
@@ -291,7 +471,7 @@
             </div>
           </div>
         </div>
-        <div class="footer_line"></div>
+        <div class="footer_line hide_mobile"></div>
         <div class="footer-links">
           <nav class="terms">
             <a href="#" class="terms__item">Terms</a>

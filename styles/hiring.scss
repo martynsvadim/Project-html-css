@@ -1,0 +1,135 @@
+.hiring {
+  padding: 50px 15px;
+
+  @include for-large-up {
+    padding: 106px 325px 110px 325px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin: 0;
+
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.357143px;
+    text-align: center;
+
+    @include for-large-up {
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.5px;
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    margin: 0;
+    margin-top: 18px;
+    line-height: 34px;
+    text-align: center;
+
+    @include for-large-up {
+      margin: auto;
+      margin-top: 20px;
+      max-width: 555px;
+    }
+  }
+
+  &__button {
+    margin-top: 30px;
+    width: 100%;
+
+    @include for-large-up {
+      margin: auto;
+      margin-top: 28px;
+      max-width: 247px;
+    }
+  }
+
+  &__vacancies {
+    margin-top: 39px;
+
+    @include for-large-up {
+      margin-top: 110px;
+    }
+  }
+
+  &__vacancy {
+    margin-top: 15px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.vacancy {
+  display: flex;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  color: $text-color-main;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $color-blue;
+
+    .vacancy__title,
+    .vacancy__location {
+      color: $color-white;
+    }
+
+    .vacancy__arrow-container {
+      background-color: transparent;
+    }
+
+    .icon-arrow_right {
+      background-image: url('image/icon-arrow-right-white.png');
+    }
+  }
+
+  &__details {
+    padding: 20px;
+    flex: 1;
+
+    @include for-large-up {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 26px 33px 25px 25px;
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+  &__location {
+    color: $text-color-light-grey;
+    margin-top: 7px;
+    line-height: 22px;
+
+    @include for-large-up {
+      font-size: 18px;
+      line-height: 24px;
+      margin-top: 0;
+    }
+  }
+
+  &__arrow-container {
+    display: flex;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-grey;
+    border-radius: 0px 8px 8px 0px;
+    margin-left: auto;
+
+    @include for-large-up {
+      background-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.action-button {
+  width: 160px;
+  height: 48px;
+  font-size: 18px;
+  background-color: $color-button-blue;
+  border-radius: 2px;
+  border: none;
+  color: $color-white;
+  font-weight: 700;
+}
+
+.hide_desktop {
+  @include for-large-up {
+    display: none;
+  }
+}
+
+.hide_mobile {
+  @include for-large-down {
+    display: none;
+  }
+}
+
+.icon-arrow_right {
+  display: block;
+  width: 7px;
+  height: 12px;
+  background-image: url(image/icon-arrow-right.png);
+}
